@@ -1,14 +1,16 @@
 <?php
 
-namespace App\Http\Controllers;
+
+namespace App\Http\Controllers\API;
+
 
 use Illuminate\Http\Request;
-use App\Http\Controllers\BaseController as BaseController;
+use App\Http\Controllers\API\BaseController as BaseController;
 use App\Product;
 use Validator;
 
 
-class ProductController extends Controller
+class ProductController extends BaseController
 {
     /**
      * Display a listing of the resource.
