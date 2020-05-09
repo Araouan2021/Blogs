@@ -21,5 +21,5 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::post('register', 'API\RegisterController@register');
   
 Route::middleware('auth:api')->group( function () {
-	Route::resource('products', 'api\ProductController');
+	Route::resource('products', 'API\ProductController');
 });
