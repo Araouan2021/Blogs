@@ -22,4 +22,6 @@ Route::post('register', 'API\RegisterController@register');
   
 Route::middleware('auth:api')->group( function () {
 	Route::resource('products', 'API\ProductController');
+
+Route::post('login', 'API\LoginController@login');
 });
